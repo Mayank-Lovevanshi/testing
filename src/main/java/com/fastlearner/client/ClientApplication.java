@@ -37,10 +37,10 @@ public class ClientApplication {
 	private static final Logger log = LoggerFactory.getLogger(ClientApplication.class);
 	public static void main(String[] args) throws InterruptedException {
 		ConcurrentRequest[] concurrentRequests = new ConcurrentRequest[100];
-		int start = 120501;
+		int start = 130501;
 		for(int i=0;i<concurrentRequests.length;i++){
-			concurrentRequests[i] = new ConcurrentRequest(start,start+99);
-			start+=100;
+			concurrentRequests[i] = new ConcurrentRequest(start,start+8694);
+			start+=8695;
 		}
 		for(int i=0;i<concurrentRequests.length;i++) {
 			concurrentRequests[i].start();
